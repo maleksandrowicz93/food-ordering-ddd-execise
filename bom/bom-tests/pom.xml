@@ -10,4 +10,24 @@
     <name>bom-tests</name>
     <description>BOM for tests dependencies</description>
     <packaging>pom</packaging>
+
+    <properties>
+        <groovy.version>4.0.8</groovy.version>
+        <spockframework.version>2.3-groovy-4.0</spockframework.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.apache.groovy</groupId>
+                <artifactId>groovy</artifactId>
+                <version>${groovy.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.spockframework</groupId>
+                <artifactId>spock-core</artifactId>
+                <version>${spockframework.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>
