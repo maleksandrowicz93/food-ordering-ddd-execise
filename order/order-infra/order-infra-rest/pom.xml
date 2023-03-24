@@ -3,21 +3,20 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>food-ordering</artifactId>
+        <artifactId>order-infra</artifactId>
         <groupId>com.github.maleksandrowicz93.food.ordering</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>order</artifactId>
-    <name>order</name>
-    <description>Order service</description>
-    <packaging>pom</packaging>
+    <artifactId>order-infra-rest</artifactId>
+    <name>order-infra-rest</name>
+    <description>REST api for order service</description>
 
-    <modules>
-        <module>order-app</module>
-        <module>order-container</module>
-        <module>order-domain</module>
-        <module>order-infra</module>
-    </modules>
+    <dependencies>
+        <dependency>
+            <groupId>com.github.maleksandrowicz93.food.ordering</groupId>
+            <artifactId>order-app</artifactId>
+        </dependency>
+    </dependencies>
 </project>

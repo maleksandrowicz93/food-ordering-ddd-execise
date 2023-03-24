@@ -10,4 +10,38 @@
     <name>bom-modules</name>
     <description>BOM for application modules</description>
     <packaging>pom</packaging>
+
+    <properties>
+        <food.ordering.version>1.0-SNAPSHOT</food.ordering.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.github.maleksandrowicz93.food.ordering</groupId>
+                <artifactId>order-app</artifactId>
+                <version>${food.ordering.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.maleksandrowicz93.food.ordering</groupId>
+                <artifactId>order-domain-core</artifactId>
+                <version>${food.ordering.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.maleksandrowicz93.food.ordering</groupId>
+                <artifactId>order-domain-service</artifactId>
+                <version>${food.ordering.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.maleksandrowicz93.food.ordering</groupId>
+                <artifactId>order-infra-persistence</artifactId>
+                <version>${food.ordering.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.maleksandrowicz93.food.ordering</groupId>
+                <artifactId>order-infra-rest</artifactId>
+                <version>${food.ordering.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>
