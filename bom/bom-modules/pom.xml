@@ -19,6 +19,11 @@
         <dependencies>
             <dependency>
                 <groupId>com.github.maleksandrowicz93.food.ordering</groupId>
+                <artifactId>common-domain</artifactId>
+                <version>${food.ordering.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.maleksandrowicz93.food.ordering</groupId>
                 <artifactId>order-app</artifactId>
                 <version>${food.ordering.version}</version>
             </dependency>

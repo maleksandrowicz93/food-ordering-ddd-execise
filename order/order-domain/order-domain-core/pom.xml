@@ -12,4 +12,11 @@
     <artifactId>order-domain-core</artifactId>
     <name>order-domain-core</name>
     <description>Order core domain rules</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.github.maleksandrowicz93.food.ordering</groupId>
+            <artifactId>common-domain</artifactId>
+        </dependency>
+    </dependencies>
 </project>
